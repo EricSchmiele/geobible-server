@@ -1,12 +1,14 @@
 import express from 'express';
-import knex from './database/connection';
+
+import LocationsController from './controllers/LocationsController'
+import BooksController from './controllers/BooksController'
 
 const routes = express.Router();
+const locationsController = new LocationsController();
+const booksController = new BooksController();
 
-routes.get('/books', async (request, response) => {
-    const books = await knex('books').select('*');
+routes.get('/books', booksController.index);
 
-    return response.json(books);
-});
+routes.post('/locations', locationsController.create);
 
 export default routes;
