@@ -1,0 +1,58 @@
+import Knex from 'knex';
+
+export async function seed(knex: Knex) {
+    await knex('chapters').insert([
+        { book_id: 26, number: 1, n_verses: 28},
+        { book_id: 26, number: 2, n_verses: 10},
+        { book_id: 26, number: 3, n_verses: 27},
+        { book_id: 26, number: 4, n_verses: 17},
+        { book_id: 26, number: 5, n_verses: 17},
+        { book_id: 26, number: 6, n_verses: 14},
+        { book_id: 26, number: 7, n_verses: 27},
+        { book_id: 26, number: 8, n_verses: 18},
+        { book_id: 26, number: 9, n_verses: 11},
+        { book_id: 26, number: 10, n_verses: 22},
+
+        { book_id: 26, number: 11, n_verses: 25},
+        { book_id: 26, number: 12, n_verses: 28},
+        { book_id: 26, number: 13, n_verses: 23},
+        { book_id: 26, number: 14, n_verses: 23},
+        { book_id: 26, number: 15, n_verses: 8},
+        { book_id: 26, number: 16, n_verses: 63},
+        { book_id: 26, number: 17, n_verses: 24},
+        { book_id: 26, number: 18, n_verses: 32},
+        { book_id: 26, number: 19, n_verses: 14},
+        { book_id: 26, number: 20, n_verses: 49},
+
+        { book_id: 26, number: 21, n_verses: 32},
+        { book_id: 26, number: 22, n_verses: 31},
+        { book_id: 26, number: 23, n_verses: 49},
+        { book_id: 26, number: 24, n_verses: 27},
+        { book_id: 26, number: 25, n_verses: 17},
+        { book_id: 26, number: 26, n_verses: 21},
+        { book_id: 26, number: 27, n_verses: 36},
+        { book_id: 26, number: 28, n_verses: 26},
+        { book_id: 26, number: 29, n_verses: 21},
+        { book_id: 26, number: 30, n_verses: 26},
+
+        { book_id: 26, number: 31, n_verses: 18},
+        { book_id: 26, number: 32, n_verses: 32},
+        { book_id: 26, number: 33, n_verses: 33},
+        { book_id: 26, number: 34, n_verses: 31},
+        { book_id: 26, number: 35, n_verses: 15},
+        { book_id: 26, number: 36, n_verses: 38},
+        { book_id: 26, number: 37, n_verses: 28},
+        { book_id: 26, number: 38, n_verses: 23},
+        { book_id: 26, number: 39, n_verses: 29},
+        { book_id: 26, number: 40, n_verses: 49},
+
+        { book_id: 26, number: 41, n_verses: 26},
+        { book_id: 26, number: 42, n_verses: 20},
+        { book_id: 26, number: 43, n_verses: 27},
+        { book_id: 26, number: 44, n_verses: 31},
+        { book_id: 26, number: 45, n_verses: 25},
+        { book_id: 26, number: 46, n_verses: 24},
+        { book_id: 26, number: 47, n_verses: 23},
+        { book_id: 26, number: 48, n_verses: 35},
+    ]);
+}
