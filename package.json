@@ -21,7 +21,7 @@
   "homepage": "https://github.com/EricSchmiele/geobible-server#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
